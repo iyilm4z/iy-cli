@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>iy-cli</ToolCommandName>
+		<PackageOutputPath>./nupkg</PackageOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+	  <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Iy.Cli.Core\Iy.Cli.Core.csproj" />
+	</ItemGroup>
+
+</Project>
